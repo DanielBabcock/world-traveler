@@ -1,0 +1,63 @@
+/* ==========================================================================
+   wt Core Variables
+   ========================================================================== */
+
+/**
+ * Core Variables are the fundamental - atomic level - declarations that
+ * support the entire system
+ *
+ * All critcal style declarations in the DS should refer to this core when
+ * possible except when styles only pertain to a respective component
+ *
+ * TODO: Add more core variables and break out mixins
+ **/
+
+/* Core System Color Variables
+  ========================================================================== */
+/* System Greys */
+$asphalt: #1f2532;
+$slate: #54575a;
+$chrome-dark: #898b8e;
+$chrome-light: #bcbcbc;
+$chrome-ultra-light: #d9d9d6;
+$calcite: #f5f5f5;
+$white: #ffffff;
+
+/*  System ____ */
+// $crimson: #960b1c;
+
+
+/* Primary WT ____ */
+
+
+/* Secondary WT ____ */
+
+
+
+
+
+/* System Font Definitions
+  ========================================================================== */
+@font-face {
+	font-family: 'WT-Mark';
+	font-display: block;
+	src: url('../typography/font/San-Serif-Mark-WT/TTF/MarkforWT-Regular.ttf');
+}
+
+// @font-face {
+	
+// }
+
+
+
+/* System-wide Core Variables
+	========================================================================== */
+/* Prefix all variables below with $core- to make them easy to identify when used in component files */
+
+/* Core Font Stack */
+$core-font-family: 'WT-Mark', 'Arial', sans-serif;
+$core-font-family-bold: 'WT-Mark-Bold', 'Arial', sans-serif;
+$core-font-family-medium: 'WT-Mark-Medium', 'Arial', sans-serif;
+$core-font-size: 1em;
+$core-line-height: 1.5;
+

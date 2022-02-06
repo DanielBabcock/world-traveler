@@ -1,0 +1,42 @@
+{
+    "cards": [
+        {
+            "id": 0,
+            "name": "Photo Tutor",
+            "aboutShort": "A web application intended to be a tool to assist students with...",
+            "aboutFull": "<p>Description: A web application intended to be a tool to assist students with limited camera access and to help educators translate fundamental photography concept to groups. It is a proof of concept for a future version that could be expanded to include being gamified and tutorials. This is an AngularJS app that uses Firebase for authentication, data storage, and hosting. It also uses HTML/CSS, Saas, Bootstrap, and Grunt.</p>",
+            "projectLink": "https://photo-tutor.firebaseapp.com/#!/",
+            "img": "img/general/scene.gif"
+        },        
+        {
+            "id": ,
+            "name": "",
+            "aboutShort": "",
+            "aboutFull": "<p>Description: .</p>",
+            "projectLink": "http://danielsoldsite.s3-website-us-east-1.amazonaws.com/",
+            "img": "img/general/danielBabcock.png"
+        }
+    ]
+}
+
+
+// ************************
+// ************************ functions w/ Vanilla JS.
+// ************************
+// [
+//   {
+//     "userId": 1,
+//     "id": 1,
+//     "title": "blah blah"
+//   },
+//   {
+//     "userId": 1,
+//     "id": 2,
+//     "title": "blah blah blah"
+//   },
+//   {
+//     "userId": 1,
+//     "id": 3,
+//     "title": "blah blah blah"
+//   } 
+// ]

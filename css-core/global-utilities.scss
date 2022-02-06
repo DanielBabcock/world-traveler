@@ -1,0 +1,543 @@
+/* ==========================================================================
+   wt Global Utilities
+   ========================================================================== */
+
+/**
+ * Global Utilities address specific or niche needs for one-off solutions
+ *
+ * TODO: This is a todo statement that describes an atomic task to be completed
+ *   at a later date. It wraps after 80 characters and following lines are
+ *   indented by 2 spaces.
+ */
+
+/* Margin Utilities
+ * ==========================================================================
+ * Modifiers for all sides, top and bottom, left and right, and individual sides
+ * Increments of 10,20,30,50,100
+ **/
+
+*[class*='wt-'] {
+	// transition: $;
+}
+
+/* Alignment Utilities
+ ========================================================================== */
+.wt-align-items--center {
+	display: flex;
+	align-items: center;
+}
+
+/* All Sides */
+.wt-margin--10 {
+	margin: 0.625em !important;
+}
+.wt-margin--20 {
+	margin: 1.25em !important;
+}
+.wt-margin--30 {
+	margin: 1.875em !important;
+}
+.wt-margin--50 {
+	margin: 3.125em !important;
+}
+.wt-margin--100 {
+	margin: 6.25em !important;
+}
+
+/* Top and Bottom only */
+.wt-margin--vertical-10 {
+	margin-top: 0.625em !important;
+	margin-bottom: 0.625em !important;
+}
+
+.wt-margin--vertical-15 {
+	margin-top: 0.938em !important;
+	margin-bottom: 0.938em !important;
+}
+
+.wt-margin--vertical-20 {
+	margin-top: 1.25em !important;
+	margin-bottom: 1.25em !important;
+}
+.wt-margin--vertical-30 {
+	margin-top: 1.875em !important;
+	margin-bottom: 1.875em !important;
+}
+.wt-margin--vertical-50 {
+	margin-top: 3.125em !important;
+	margin-bottom: 3.125em !important;
+}
+.wt-margin--vertical-100 {
+	margin-top: 6.25em !important;
+	margin-bottom: 6.25em !important;
+}
+
+/* Left and Right only */
+.wt-margin--horizontal-auto {
+	margin: 0em auto;
+}
+.wt-margin--horizontal-10 {
+	margin-right: 0.625em !important;
+	margin-left: 0.625em !important;
+}
+.wt-margin--horizontal-20 {
+	margin-right: 1.25em !important;
+	margin-left: 1.25em !important;
+}
+.wt-margin--horizontal-30 {
+	margin-right: 1.875em !important;
+	margin-left: 1.875em !important;
+}
+.wt-margin--horizontal-50 {
+	margin-right: 3.125em !important;
+	margin-left: 3.125em !important;
+}
+.wt-margin--horizontal-100 {
+	margin-right: 6.25em !important;
+	margin-left: 6.25em !important;
+}
+
+/* Top only */
+.wt-margin--top-10 {
+	margin-top: 0.625em !important;
+}
+.wt-margin--top-20 {
+	margin-top: 1.25em !important;
+}
+.wt-margin--top-30 {
+	margin-top: 1.875em !important;
+}
+.wt-margin--top-50 {
+	margin-top: 3.125em !important;
+}
+.wt-margin--top-100 {
+	margin-top: 6.25em !important;
+}
+
+/* Right only */
+.wt-margin--right-10 {
+	margin-right: 0.625em !important;
+}
+.wt-margin--right-20 {
+	margin-right: 1.25em !important;
+}
+.wt-margin--right-30 {
+	margin-right: 1.875em !important;
+}
+.wt-margin--right-50 {
+	margin-right: 3.125em !important;
+}
+.wt-margin--right-100 {
+	margin-right: 6.25em !important;
+}
+
+/*  Bottom only */
+.wt-margin--bottom-10 {
+	margin-bottom: 0.625em !important;
+}
+.wt-margin--bottom-20 {
+	margin-bottom: 1.25em !important;
+}
+.wt-margin--bottom-30 {
+	margin-bottom: 1.875em !important;
+}
+.wt-margin--bottom-50 {
+	margin-bottom: 3.125em !important;
+}
+.wt-margin--bottom-100 {
+	margin-bottom: 6.25em !important;
+}
+
+/* Left only */
+.wt-margin--left-10 {
+	margin-left: 0.625em !important;
+}
+.wt-margin--left-20 {
+	margin-left: 1.25em !important;
+}
+.wt-margin--left-30 {
+	margin-left: 1.875em !important;
+}
+.wt-margin--left-50 {
+	margin-left: 3.125em !important;
+}
+.wt-margin--left-100 {
+	margin-left: 6.25em !important;
+}
+
+/* Padding Utilities
+ * =============================================================================
+ * Modifiers for all sides, top and bottom, left and right, and individual sides
+ * Increments of 10,20,30,50,100
+ **/
+
+/* All Sides */
+.wt-padding--10 {
+	padding: 0.625em !important;
+}
+.wt-padding--20 {
+	padding: 1.25em !important;
+}
+.wt-padding--30 {
+	padding: 1.875em !important;
+}
+.wt-padding--50 {
+	padding: 3.125em !important;
+}
+.wt-padding--100 {
+	padding: 6.25em !important;
+}
+
+/* Top and Bottom only */
+.wt-padding--vertical-10 {
+	padding-top: 0.625em !important;
+	padding-bottom: 0.625em !important;
+}
+.wt-padding--vertical-20 {
+	padding-top: 1.25em !important;
+	padding-bottom: 1.25em !important;
+}
+.wt-padding--vertical-30 {
+	padding-top: 1.875em !important;
+	padding-bottom: 1.875em !important;
+}
+.wt-padding--vertical-50 {
+	padding-top: 3.125em !important;
+	padding-bottom: 3.125em !important;
+}
+.wt-padding--vertical-100 {
+	padding-top: 6.25em !important;
+	padding-bottom: 6.25em !important;
+}
+
+/* Left and Right only */
+.wt-padding--horizontal-10 {
+	padding-right: 0.625em !important;
+	padding-left: 0.625em !important;
+}
+.wt-padding--horizontal-15 {
+	padding-right: 0.938em !important;
+	padding-left: 0.938em !important;
+}
+.wt-padding--horizontal-15 {
+	padding-left: 0.938em !important;
+	padding-right: 0.938em !important;
+}
+.wt-padding--horizontal-20 {
+	padding-right: 1.25em !important;
+	padding-left: 1.25em !important;
+}
+.wt-padding--horizontal-30 {
+	padding-right: 1.875em !important;
+	padding-left: 1.875em !important;
+}
+.wt-padding--horizontal-50 {
+	padding-right: 3.125em !important;
+	padding-left: 3.125em !important;
+}
+.wt-padding--horizontal-100 {
+	padding-right: 6.25em !important;
+	padding-left: 6.25em !important;
+}
+
+/* Top only */
+.wt-padding--top-10 {
+	padding-top: 0.625em !important;
+}
+.wt-padding--top-20 {
+	padding-top: 1.25em !important;
+}
+.wt-padding--top-30 {
+	padding-top: 1.875em !important;
+}
+.wt-padding--top-50 {
+	padding-top: 3.125em !important;
+}
+.wt-padding--top-100 {
+	padding-top: 6.25em !important;
+}
+
+/* Right only */
+.wt-padding--right-10 {
+	padding-right: 0.625em !important;
+}
+.wt-padding--right-20 {
+	padding-right: 1.25em !important;
+}
+.wt-padding--right-30 {
+	padding-right: 1.875em !important;
+}
+.wt-padding--right-50 {
+	padding-right: 3.125em !important;
+}
+.wt-padding--right-100 {
+	padding-right: 6.25em !important;
+}
+
+/* Bottom only */
+.wt-padding--bottom-10 {
+	padding-bottom: 0.625em !important;
+}
+.wt-padding--bottom-20 {
+	padding-bottom: 1.25em !important;
+}
+.wt-padding--bottom-30 {
+	padding-bottom: 1.875em !important;
+}
+.wt-padding--bottom-50 {
+	padding-bottom: 3.125em !important;
+}
+.wt-padding--bottom-100 {
+	padding-bottom: 6.25em !important;
+}
+
+/* Left only */
+.wt-padding--left-10 {
+	padding-left: 0.625em !important;
+}
+.wt-padding--left-20 {
+	padding-left: 1.25em !important;
+}
+.wt-padding--left-30 {
+	padding-left: 1.875em !important;
+}
+.wt-padding--left-50 {
+	padding-left: 3.125em !important;
+}
+.wt-padding--left-100 {
+	padding-left: 6.25em !important;
+}
+
+/* Width Utilities
+ ========================================================================== */
+.wt-width--10 {
+	width: 10% !important;
+}
+.wt-width--20 {
+	width: 20% !important;
+}
+.wt-width--30 {
+	width: 30% !important;
+}
+.wt-width--40 {
+	width: 40% !important;
+}
+.wt-width--50 {
+	width: 50% !important;
+}
+.wt-width--60 {
+	width: 60% !important;
+}
+.wt-width--70 {
+	width: 70% !important;
+}
+.wt-width--80 {
+	width: 80% !important;
+}
+.wt-width--90 {
+	width: 90% !important;
+}
+.wt-width--100 {
+	width: 100% !important;
+}
+
+/* Background Color Utilities
+ ========================================================================== */
+/* System Greys */
+.wt-background--asphalt {
+	background-color: $asphalt !important;
+}
+.wt-background--chrome-dark {
+	background-color: $chrome-dark !important;
+}
+.wt-background--slate {
+	background-color: $slate !important;
+}
+.wt-background--chrome-light {
+	background-color: $chrome-light !important;
+}
+.wt-background--chrome-ultra-light {
+	background-color: $chrome-ultra-light !important;
+}
+.wt-background--calcite {
+	background-color: $calcite !important;
+}
+.wt-background--white {
+	background-color: $white !important;
+}
+
+/*  System ____ */
+// $crimson: #960b1c;
+
+
+/* Primary WT ____ */
+
+
+/* Secondary WT ____ */
+
+/* Border Radius
+ ========================================================================== */
+
+
+/* Alignment
+ ========================================================================== */
+.wt-text--align-center {
+	text-align: center;
+}
+
+.wt-text--align-left {
+	text-align: left;
+}
+
+/* Column Count
+ ========================================================================== */
+.wt-columns--two {
+	-webkit-column-count: 2;
+	-moz-column-count: 2;
+	-o-column-count: 2;
+	column-count: 2;
+}
+
+/* Element Floats
+ ========================================================================== */
+.wt-float--left {
+	float: left;
+}
+.wt-float--right {
+	float: right;
+}
+/* Text wraps
+ ========================================================================== */
+.wt-text-overflow {
+	overflow-wrap: break-word;
+	word-wrap: break-word;
+	hyphens: auto;
+}
+@media (max-width: 576px) {
+	.wt-text-overflow--sm {
+		overflow-wrap: break-word;
+		word-wrap: break-word;
+		hyphens: auto;
+	}
+}
+
+@media (max-width: 768px) {
+	.wt-text-overflow--md {
+		overflow-wrap: break-word;
+		word-wrap: break-word;
+		hyphens: auto;
+	}
+}
+
+@media (max-width: 992px) {
+	.wt-text-overflow--lg {
+		overflow-wrap: break-word;
+		word-wrap: break-word;
+		hyphens: auto;
+	}
+}
+@media (max-width: 1200px) {
+	.wt-text-overflow--xl {
+		overflow-wrap: break-word;
+		word-wrap: break-word;
+		hyphens: auto;
+	}
+}
+/* Media query breakpoint classes based on max-width counter to the min-width classes in grid.scss
+ ========================================================================== */
+@media (max-width: 576px) {
+	.d-max-sm-none {
+		display: none !important;
+	}
+	.d-max-sm-inline {
+		display: inline !important;
+	}
+	.d-max-sm-inline-block {
+		display: inline-block !important;
+	}
+	.d-max-sm-block {
+		display: block !important;
+	}
+	.d-max-sm-flex {
+		display: -webkit-box !important;
+		display: -ms-flexbox !important;
+		display: flex !important;
+	}
+	.d-max-sm-inline-flex {
+		display: -webkit-inline-box !important;
+		display: -ms-inline-flexbox !important;
+		display: inline-flex !important;
+	}
+}
+@media (max-width: 768px) {
+	.d-max-md-none {
+		display: none !important;
+	}
+	.d-max-md-inline {
+		display: inline !important;
+	}
+	.d-max-md-inline-block {
+		display: inline-block !important;
+	}
+	.d-max-md-block {
+		display: block !important;
+	}
+	.d-max-md-flex {
+		display: -webkit-box !important;
+		display: -ms-flexbox !important;
+		display: flex !important;
+	}
+	.d-max-md-inline-flex {
+		display: -webkit-inline-box !important;
+		display: -ms-inline-flexbox !important;
+		display: inline-flex !important;
+	}
+}
+@media (max-width: 992px) {
+	.d-max-lg-none {
+		display: none !important;
+	}
+	.d-max-lg-inline {
+		display: inline !important;
+	}
+	.d-max-lg-inline-block {
+		display: inline-block !important;
+	}
+	.d-max-lg-block {
+		display: block !important;
+	}
+	.d-max-lg-flex {
+		display: -webkit-box !important;
+		display: -ms-flexbox !important;
+		display: flex !important;
+	}
+	.d-max-lg-inline-flex {
+		display: -webkit-inline-box !important;
+		display: -ms-inline-flexbox !important;
+		display: inline-flex !important;
+	}
+}
+@media (max-width: 1200px) {
+	.d-max-xl-none {
+		display: none !important;
+	}
+	.d-max-xl-inline {
+		display: inline !important;
+	}
+	.d-max-xl-inline-block {
+		display: inline-block !important;
+	}
+	.d-max-xl-block {
+		display: block !important;
+	}
+	.d-max-xl-flex {
+		display: -webkit-box !important;
+		display: -ms-flexbox !important;
+		display: flex !important;
+	}
+	.d-max-xl-inline-flex {
+		display: -webkit-inline-box !important;
+		display: -ms-inline-flexbox !important;
+		display: inline-flex !important;
+	}
+}
