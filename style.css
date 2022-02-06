@@ -3016,20 +3016,7 @@ small {
 
 /*  Core Mixins */
 /* WT - Atoms */
-.grid-block {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  width: 1200px;
-  max-width: 95%;
-  margin: 0 auto;
-  justify-content: center;
-  flex-direction: column;
-  padding: 50px 10px 50px 10px; }
-
-.focused-cards {
+.wt-cards--travel {
   display: -webkit-box;
   display: -moz-box;
   display: -webkit-flex;
@@ -3044,15 +3031,8 @@ small {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center; }
-.focused-card {
-  background: #ffffff;
-  box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.16);
-  -moz-box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.16);
-  -webkit-box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.16);
-  border-radius: 10px;
-  max-width: 431px;
-  min-width: 300px;
-  height: auto;
+
+.wt-card--travel {
   display: -webkit-box;
   display: -moz-box;
   display: -webkit-flex;
@@ -3065,10 +3045,76 @@ small {
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  padding: 25px;
-  margin: 25px 13px 25px 13px;
+  background: #fff;
+  max-width: 1200px;
+  max-width: 95%;
+  margin: 25px auto;
+  justify-content: center;
+  columns: 2;
+  background: #ffffff;
   z-index: 1; }
-  .focused-card img {
-    height: auto; }
+  .wt-card--travel-cta {
+    font-family: SourceSansPro-SemiBold;
+    font-size: 14px;
+    color: #888888;
+    letter-spacing: 0.5px;
+    text-align: left; }
+  .wt-card--travel-location {
+    font-family: SourceSansPro-Bold;
+    font-size: 24px;
+    color: #333333;
+    letter-spacing: -0.3px;
+    text-align: left; }
+  .wt-card--travel-date {
+    font-family: SourceSansPro-Bold;
+    font-size: 14px;
+    color: #333333;
+    letter-spacing: 0.91px;
+    text-align: left; }
+  .wt-card--travel-text {
+    font-family: SourceSansPro-Regular;
+    font-size: 16px;
+    color: #333333;
+    text-align: left;
+    line-height: 28px; }
+  .wt-card--travel-image {
+    color: black; }
+  .wt-card--travel:first-child {
+    columns: 1; }
+    .wt-card--travel:first-child .wt-card--travel-location {
+      font-size: 30px; }
+    .wt-card--travel:first-child .wt-card--travel-date {
+      font-size: 16px; }
+    .wt-card--travel:first-child .wt-card--travel-text {
+      font-size: 18px; }
+
+.wt-card--flex-left {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-direction: normal;
+  -webkit-box-orient: horizontal;
+  -moz-box-direction: normal;
+  -moz-box-orient: horizontal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  flex-wrap: wrap; }
+.wt-card--flex-right {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-direction: normal;
+  -webkit-box-orient: vertical;
+  -moz-box-direction: normal;
+  -moz-box-orient: vertical;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  flex-wrap: wrap; }
 
 /*# sourceMappingURL=style.css.map */

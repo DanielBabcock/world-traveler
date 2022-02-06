@@ -1,74 +1,95 @@
-.wt-card--travel {
+.wt-cards--travel {
     @include flexbox;
-    max-width: 1200px;
-    max-width: 95%;
-    margin: 25px auto;
+    @include flex-direction(row);
+    flex-wrap: wrap;
     justify-content: center;
-    flex-direction: row;
-    flex-flow: row wrap;
-    padding: 50px 10px 50px 10px;
-    columns: 2;
-    // column-gap: 20px;
+    }
+    .wt-card--travel {
+        @include flexbox;
+        @include flex-direction(row);
+        background: #fff;
+        max-width: 1200px;
+        max-width: 95%;
+        margin: 25px auto;
+        justify-content: center;;        
+        columns: 2;        
+        background: #ffffff;            
+        z-index: 1;
+
+        &-cta {
+            font-family: SourceSansPro-SemiBold;
+            font-size: 14px;
+            color: #888888;
+            letter-spacing: 0.5px;
+            text-align: left;
+        }
+        &-location {
+            font-family: SourceSansPro-Bold;
+            font-size: 24px;
+            color: #333333;
+            letter-spacing: -0.3px;
+            text-align: left;
+        }
+
+        &-date {
+            font-family: SourceSansPro-Bold;
+            font-size: 14px;
+            color: #333333;
+            letter-spacing: 0.91px;
+            text-align: left;
+        }
+
+        &-text {
+            font-family: SourceSansPro-Regular;
+            font-size: 16px;
+            color: #333333;
+            text-align: left;
+            line-height: 28px;
+        }
+
+        &-image {
+            color: black;
+        }
+
+    &:first-child {
+        columns: 1;                
+         .wt-card--travel-location {             
+             font-size: 30px;
+         }
+
+         .wt-card--travel-date {
+             font-size: 16px;
+         }
+
+         .wt-card--travel-text {
+             font-size: 18px;
+         }         
+    }
 }
 
-.wt-card--travel:first-child {
-    columns: 2;
-}
-
-.grid-block {    
-}
-.focused {
-    // @media (min-width: 1098px) {
-    //     max-height: 700px;
-    // }
-
-    &-cards {
+.wt-card--flex {
+    &-left {
         @include flexbox;
         @include flex-direction(row);
         flex-wrap: wrap;
-        justify-content: center;
     }
-
-    &-card {
-        background: #ffffff;
-        box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.16);
-        -moz-box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.16);
-        -webkit-box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.16);
-        border-radius: 10px;
-        max-width: 431px;
-        min-width: 300px; // ie bug;
-        height: auto;
+    &-right {
         @include flexbox;
-        @include flex-direction(row);
-        padding: 25px;
-        margin: 25px 13px 25px 13px;
-        z-index: 1;
-
-        // &-btn {
-        //   @media (min-width: 984px) {
-        //     position: relative;
-        //     top: 25px;
-        //   }
-        // }
-
-        & img {
-            height: auto;
-            // width: 45px;
-        }
-        
+        @include flex-direction(column);
+        flex-wrap: wrap;
     }
-
-    // &-img {
-    //     position: relative;
-    //     width: auto;
-    //     max-height: 376px;
-    //     bottom: 237px;
-    //     right: 100px;
-
-    //     @media all and (-ms-high-contrast: none),
-    //     (-ms-high-contrast: active) {
-    //         // IE10+ CSS here // ie bug
-    //         display: none;
-    //     }
-    // }
 }
+    
+
+// &-img {
+//     position: relative;
+//     width: auto;
+//     max-height: 376px;
+//     bottom: 237px;
+//     right: 100px;
+
+//     @media all and (-ms-high-contrast: none),
+//     (-ms-high-contrast: active) {
+//         // IE10+ CSS here // ie bug
+//         display: none;
+//     }
