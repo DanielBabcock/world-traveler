@@ -1,0 +1,37 @@
+/*
+ *
+ * IMPORTANT: 
+ *
+ * TODO:
+ *
+ */
+
+/* Core Variables  */
+@import './core-variables.scss';
+
+/* Bootstrap Grid */
+@import './grid.scss';
+
+/* WT specific reset  */
+@import './wt-reset.scss';
+
+/*  Global Utilities */
+@import './global-utilities.scss';
+
+/*  Typography */
+@import './typography.scss';
+
+/*  Core Mixins */
+@import './mixins.scss';
+
+/* WT - Atoms */
+@import '../patterns/atoms/card--travel/card--travel.scss';
+
+// /* WT - Molecules */
+// @import '../patterns/molecules/molecule/molecule.scss';
+
+// /* WT - Organisms */
+// @import '../patterns/organisms/organism/organism.scss';
+
+// /* WT - Template */
+// @import '../patterns/templates/template/template.scss';
