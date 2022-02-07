@@ -3,26 +3,26 @@
         {
             "id": 0,            
             "image": "assets/images/atlanta-img.png",
-            "cta": "CTA",
-            "location": "Location, Location",
-            "date": "MONTH, DD, YYYY",
-            "text": "Loremy ipsum things"
+            "wt-card--travel-body-cta": "CTA-Large",
+            "wt-card--travel-body-cta": "Location, lrg",
+            "wt-card--travel-body-cta": "MONTH, DD, YYYY",
+            "wt-card--travel-body-cta": "Loremy ipsum things"
         },        
         {
             "id": 1,
             "image": "assets/images/atlanta-img.png",
-            "cta": "CTA",
-            "location": "Location, Location",
-            "date": "MONTH, DD, YYYY",
-            "text": "Loremy ipsum things"
+            "wt-card--travel-body-cta": "wt-card--travel-body-cta",
+            "wt-card--travel-body-cta": "Location, First",
+            "wt-card--travel-body-cta": "MONTH, DD, YYYY",
+            "wt-card--travel-body-cta": "Loremy ipsum things"
         },
         {
             "id": 2,
             "image": "assets/images/atlanta-img.png",
-            "cta": "CTA",
-            "location": "Location, Location",
-            "date": "MONTH, DD, YYYY",
-            "text": "Loremy ipsum things"
+            "wt-card--travel-body-cta": "wt-card--travel-body-cta",
+            "wt-card--travel-body-cta": "Location, Second",
+            "wt-card--travel-body-cta": "MONTH, DD, YYYY",
+            "wt-card--travel-body-cta": "Loremy ipsum things"
         }
     ]
 }

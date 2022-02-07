@@ -20,13 +20,15 @@
 
 html,
 body {
+	min-height: 100vh; // WT Hack
 	font-family: $core-font-family;
 	font-size: $core-font-size;
-	background-color: $calcite;
+	background-color: $chrome-ultra-light !important; // WT Hack (should not have to do !important)
 	color: $asphalt;
 	margin: 0px;
 	line-height: $core-line-height;
-	-webkit-text-size-adjust: 100%; /* Prevent adjustments of font size after orientation changes in iOS. */
+	-webkit-text-size-adjust: 100%; 
+	/* Prevent adjustments of font size after orientation changes in iOS. */
 	/* Standardizes the focus state of all elements for visual accessibility, */
 	/* especially when tabbing through the interface */
 }
