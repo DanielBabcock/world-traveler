@@ -3045,6 +3045,7 @@ small {
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
+  flex-wrap: wrap;
   background: #fff;
   max-width: 1200px;
   max-width: 95%;
