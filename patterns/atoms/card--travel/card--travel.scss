@@ -1,95 +1,103 @@
-.wt-cards--travel {
-    @include flexbox;
-    @include flex-direction(row);
-    flex-wrap: wrap;
-    justify-content: center;
+.wt-card--travel {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, .125);   
+    margin: 25px auto; 
+    &-international{  
+        position: absolute;
+        top: 5%;
+        left: -5px;
+        font-size: 14px;
+        color: #333333;
+        letter-spacing: 0.8px;
+        text-align: left;
+        background: #FFFFFF;
+        padding: 5px 10px;
+        border-left: #32C5FF solid 5px;
+        text-transform: uppercase;
     }
-    .wt-card--travel {
-        @include flexbox;
-        @include flex-direction(row);
-        background: #fff;
-        max-width: 1200px;
-        max-width: 95%;
-        margin: 25px auto;
-        justify-content: center;;        
-        columns: 2;        
-        background: #ffffff;            
-        z-index: 1;
-
+    &-domestic {
+        position: absolute;
+        top: 5%;
+        left: -5px;
+        font-size: 14px;
+        color: #333333;
+        letter-spacing: 0.8px;
+        text-align: left;
+        background: #FFFFFF;
+        padding: 5px 10px;
+        border-left: #F7B500 solid 5px;
+        text-transform: uppercase;
+    }
+    &-lrg {        
+        margin-top: 100px;
+        .wt-card--travel-body-location {
+            font-size: 1.875em;
+            margin: 10px 0;
+        }
+        .wt-card--travel-body-date {
+            font-size: 1em;
+            margin-bottom: 10px;
+        }
+        .wt-card--travel-body-text {
+            font-size: 1.125em;
+        }
+    }
+    &-img {
+        width: 100%;
+        height: 100%;
+        object-fit: fill;
+    }
+    &-body {
+        -ms-flex: 1 1 auto;
+        flex: 1 1 auto;
+        padding: 1.25rem;
         &-cta {
-            font-family: SourceSansPro-SemiBold;
-            font-size: 14px;
+            font-size: 0.875em;
             color: #888888;
             letter-spacing: 0.5px;
             text-align: left;
+            text-transform: uppercase;
+            font-weight: 500;
         }
+
         &-location {
-            font-family: SourceSansPro-Bold;
-            font-size: 24px;
+            font-size: 1.5em;
             color: #333333;
             letter-spacing: -0.3px;
             text-align: left;
+            margin: 10px 0 8px 0;
         }
 
         &-date {
-            font-family: SourceSansPro-Bold;
-            font-size: 14px;
+            font-size: 0.875em;
             color: #333333;
             letter-spacing: 0.91px;
             text-align: left;
+            text-transform: uppercase;
+            margin-bottom: 8px;
         }
 
         &-text {
-            font-family: SourceSansPro-Regular;
-            font-size: 16px;
+            font-size: 1em;
             color: #333333;
             text-align: left;
             line-height: 28px;
         }
-
-        &-image {
-            color: black;
-        }
-
-    &:first-child {
-        columns: 1;                
-         .wt-card--travel-location {             
-             font-size: 30px;
-         }
-
-         .wt-card--travel-date {
-             font-size: 16px;
-         }
-
-         .wt-card--travel-text {
-             font-size: 18px;
-         }         
     }
 }
 
-.wt-card--flex {
-    &-left {
-        @include flexbox;
-        @include flex-direction(row);
-        flex-wrap: wrap;
-    }
-    &-right {
-        @include flexbox;
-        @include flex-direction(column);
-        flex-wrap: wrap;
-    }
-}
-    
+        
 
-// &-img {
-//     position: relative;
-//     width: auto;
-//     max-height: 376px;
-//     bottom: 237px;
-//     right: 100px;
-
-//     @media all and (-ms-high-contrast: none),
-//     (-ms-high-contrast: active) {
-//         // IE10+ CSS here // ie bug
-//         display: none;
-//     }
+// // //     @media all and (-ms-high-contrast: none),
+// // //     (-ms-high-contrast: active) {
+// // //         // IE10+ CSS here // ie bug
+// // //         display: none;
+// // //     }

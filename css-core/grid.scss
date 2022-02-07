@@ -1,10 +1,10 @@
-/*!
- * Bootstrap Grid v4.0.0 (https://getbootstrap.com)
- * Copyright 2011-2018 The Bootstrap Authors
- * Copyright 2011-2018 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
- * This is a slightly tweaked version of the BS4 grid
- */
+// /*!
+//  * Bootstrap Grid v4.0.0 (https://getbootstrap.com)
+//  * 
+//  * Can delete bootstrap from the project, un-comment this file, & use just the Grid classes if needed.
+//  * 
+//  * This is a slightly tweaked version of the BS4 grid
+//  */
 @-ms-viewport {
 	width: device-width;
 }
@@ -54,7 +54,7 @@ html {
 
 @media (min-width: 1400px) {
 	.container {
-		max-width: 1320px;
+		max-width: 1320px !important; // WT Hack (should not have to use !important)
 	}
 }
 
@@ -2483,4 +2483,7 @@ html {
 		-ms-flex-item-align: stretch !important;
 		align-self: stretch !important;
 	}
+}
+.vertical-center--col-content {
+	    align-self: center;
 }

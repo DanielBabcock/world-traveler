@@ -26,22 +26,12 @@
 /* Secondary WT ____ */
 /* System Font Definitions
   ========================================================================== */
-@font-face {
-  font-family: 'WT-Mark';
-  font-display: block;
-  src: url("../typography/font/San-Serif-Mark-WT/TTF/MarkforWT-Regular.ttf"); }
+@font-face {}
 /* System-wide Core Variables
 	========================================================================== */
 /* Prefix all variables below with $core- to make them easy to identify when used in component files */
 /* Core Font Stack */
 /* Bootstrap Grid */
-/*!
- * Bootstrap Grid v4.0.0 (https://getbootstrap.com)
- * Copyright 2011-2018 The Bootstrap Authors
- * Copyright 2011-2018 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
- * This is a slightly tweaked version of the BS4 grid
- */
 @-ms-viewport {
   width: device-width; }
 html {
@@ -74,7 +64,7 @@ html {
     max-width: 1140px; } }
 @media (min-width: 1400px) {
   .container {
-    max-width: 1320px; } }
+    max-width: 1320px !important; } }
 .container-fluid {
   width: 100%;
   padding-right: 15px;
@@ -2051,6 +2041,9 @@ html {
   .align-self-xl-stretch {
     -ms-flex-item-align: stretch !important;
     align-self: stretch !important; } }
+.vertical-center--col-content {
+  align-self: center; }
+
 /* WT specific reset  */
 /* ==========================================================================
    wt Reset
@@ -2071,9 +2064,10 @@ html {
  **/
 html,
 body {
+  min-height: 100vh;
   font-family: "WT-Mark", "Arial", sans-serif;
   font-size: 1em;
-  background-color: #f5f5f5;
+  background-color: #EEEFF2 !important;
   color: #1f2532;
   margin: 0px;
   line-height: 1.5;
@@ -2699,7 +2693,7 @@ ul {
   background-color: #bcbcbc !important; }
 
 .wt-background--chrome-ultra-light {
-  background-color: #d9d9d6 !important; }
+  background-color: #EEEFF2 !important; }
 
 .wt-background--calcite {
   background-color: #f5f5f5 !important; }
@@ -2993,7 +2987,7 @@ small {
   color: #bcbcbc !important; }
 
 .wt-text--chrome-ultra-light {
-  color: #d9d9d6 !important; }
+  color: #EEEFF2 !important; }
 
 .wt-text--calcite {
   color: #f5f5f5 !important; }
@@ -3016,105 +3010,79 @@ small {
 
 /*  Core Mixins */
 /* WT - Atoms */
-.wt-cards--travel {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-direction: normal;
-  -webkit-box-orient: horizontal;
-  -moz-box-direction: normal;
-  -moz-box-orient: horizontal;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center; }
-
 .wt-card--travel {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -webkit-flex;
+  position: relative;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-direction: normal;
-  -webkit-box-orient: horizontal;
-  -moz-box-direction: normal;
-  -moz-box-orient: horizontal;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  background: #fff;
-  max-width: 1200px;
-  max-width: 95%;
-  margin: 25px auto;
-  justify-content: center;
-  columns: 2;
-  background: #ffffff;
-  z-index: 1; }
-  .wt-card--travel-cta {
-    font-family: SourceSansPro-SemiBold;
-    font-size: 14px;
-    color: #888888;
-    letter-spacing: 0.5px;
-    text-align: left; }
-  .wt-card--travel-location {
-    font-family: SourceSansPro-Bold;
-    font-size: 24px;
-    color: #333333;
-    letter-spacing: -0.3px;
-    text-align: left; }
-  .wt-card--travel-date {
-    font-family: SourceSansPro-Bold;
-    font-size: 14px;
-    color: #333333;
-    letter-spacing: 0.91px;
-    text-align: left; }
-  .wt-card--travel-text {
-    font-family: SourceSansPro-Regular;
-    font-size: 16px;
-    color: #333333;
-    text-align: left;
-    line-height: 28px; }
-  .wt-card--travel-image {
-    color: black; }
-  .wt-card--travel:first-child {
-    columns: 1; }
-    .wt-card--travel:first-child .wt-card--travel-location {
-      font-size: 30px; }
-    .wt-card--travel:first-child .wt-card--travel-date {
-      font-size: 16px; }
-    .wt-card--travel:first-child .wt-card--travel-text {
-      font-size: 18px; }
-
-.wt-card--flex-left {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-direction: normal;
-  -webkit-box-orient: horizontal;
-  -moz-box-direction: normal;
-  -moz-box-orient: horizontal;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  flex-wrap: wrap; }
-.wt-card--flex-right {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-direction: normal;
-  -webkit-box-orient: vertical;
-  -moz-box-direction: normal;
-  -moz-box-orient: vertical;
-  -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  flex-wrap: wrap; }
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  margin: 25px auto; }
+  .wt-card--travel-international {
+    position: absolute;
+    top: 5%;
+    left: -5px;
+    font-size: 14px;
+    color: #333333;
+    letter-spacing: 0.8px;
+    text-align: left;
+    background: #FFFFFF;
+    padding: 5px 10px;
+    border-left: #32C5FF solid 5px;
+    text-transform: uppercase; }
+  .wt-card--travel-domestic {
+    position: absolute;
+    top: 5%;
+    left: -5px;
+    font-size: 14px;
+    color: #333333;
+    letter-spacing: 0.8px;
+    text-align: left;
+    background: #FFFFFF;
+    padding: 5px 10px;
+    border-left: #F7B500 solid 5px;
+    text-transform: uppercase; }
+  .wt-card--travel-lrg {
+    margin-top: 100px; }
+    .wt-card--travel-lrg .wt-card--travel-body-location {
+      font-size: 1.875em; }
+    .wt-card--travel-lrg .wt-card--travel-body-date {
+      font-size: 1em; }
+    .wt-card--travel-lrg .wt-card--travel-body-text {
+      font-size: 1.125em; }
+  .wt-card--travel-img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill; }
+  .wt-card--travel-body {
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 1.25rem; }
+    .wt-card--travel-body-cta {
+      font-size: 0.875em;
+      color: #888888;
+      letter-spacing: 0.5px;
+      text-align: left;
+      text-transform: uppercase; }
+    .wt-card--travel-body-location {
+      font-size: 1.5em;
+      color: #333333;
+      letter-spacing: -0.3px;
+      text-align: left; }
+    .wt-card--travel-body-date {
+      font-size: 0.875em;
+      color: #333333;
+      letter-spacing: 0.91px;
+      text-align: left;
+      text-transform: uppercase; }
+    .wt-card--travel-body-text {
+      font-size: 1em;
+      color: #333333;
+      text-align: left;
+      line-height: 28px; }
 
 /*# sourceMappingURL=style.css.map */
