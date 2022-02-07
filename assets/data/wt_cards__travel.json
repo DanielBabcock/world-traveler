@@ -1,26 +1,29 @@
 {
     "cards": [
         {
-            "id": 0,            
-            "image": "assets/images/atlanta-img.png",
-            "wt-card--travel-body-cta": "CTA-Large",
-            "wt-card--travel-body-cta": "Location, lrg",
+            "id": 0,         
+            "wt-card--travel-international": true,   
+            "wt-card--travel-image": "assets/images/atlanta-img.png",
+            "wt-card--travel-body-cta": "CTA Text",
+            "wt-card--travel-body-cta": "Location",
             "wt-card--travel-body-cta": "MONTH, DD, YYYY",
             "wt-card--travel-body-cta": "Loremy ipsum things"
         },        
         {
             "id": 1,
-            "image": "assets/images/atlanta-img.png",
-            "wt-card--travel-body-cta": "wt-card--travel-body-cta",
-            "wt-card--travel-body-cta": "Location, First",
+            "wt-card--travel-international": false,   
+            "wt-card--travel-image": "assets/images/atlanta-img.png",
+            "wt-card--travel-body-cta": "CTA Text",
+            "wt-card--travel-body-cta": "Location",
             "wt-card--travel-body-cta": "MONTH, DD, YYYY",
             "wt-card--travel-body-cta": "Loremy ipsum things"
         },
         {
             "id": 2,
-            "image": "assets/images/atlanta-img.png",
-            "wt-card--travel-body-cta": "wt-card--travel-body-cta",
-            "wt-card--travel-body-cta": "Location, Second",
+            "wt-card--travel-international": true,   
+            "wt-card--travel-image": "assets/images/atlanta-img.png",
+            "wt-card--travel-body-cta": "CTA Text",
+            "wt-card--travel-body-cta": "Location",
             "wt-card--travel-body-cta": "MONTH, DD, YYYY",
             "wt-card--travel-body-cta": "Loremy ipsum things"
         }

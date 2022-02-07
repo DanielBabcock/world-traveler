@@ -55,9 +55,9 @@ $white: #ffffff;
 /* Prefix all variables below with $core- to make them easy to identify when used in component files */
 
 /* Core Font Stack */
-$core-font-family: 'WT-Mark', 'Arial', sans-serif;
-$core-font-family-bold: 'WT-Mark-Bold', 'Arial', sans-serif;
-$core-font-family-medium: 'WT-Mark-Medium', 'Arial', sans-serif;
+$core-font-family: "Source Sans Pro",'Arial',sans-serif;
+// $core-font-family-bold: '', 'Arial', sans-serif;
+// $core-font-family-medium: '', 'Arial', sans-serif;
 $core-font-size: 1em;
 $core-line-height: 1.5;
 

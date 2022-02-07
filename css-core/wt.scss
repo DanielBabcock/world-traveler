@@ -25,10 +25,10 @@
 @import './mixins.scss';
 
 /* WT - Atoms */
-@import '../patterns/atoms/card--travel/card--travel.scss';
+// @import '../patterns/atoms/atom--name/atom--name.scss';
 
 // /* WT - Molecules */
-// @import '../patterns/molecules/molecule/molecule.scss';
+@import '../patterns/molecules/card--travel/card--travel.scss';
 
 // /* WT - Organisms */
 // @import '../patterns/organisms/organism/organism.scss';
