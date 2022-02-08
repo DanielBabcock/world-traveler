@@ -64,7 +64,7 @@ html {
     max-width: 1140px; } }
 @media (min-width: 1400px) {
   .container {
-    max-width: 1320px !important; } }
+    max-width: 1320px; } }
 .container-fluid {
   width: 100%;
   padding-right: 15px;
@@ -2068,7 +2068,7 @@ body {
   font-family: "Source Sans Pro", "Arial", sans-serif;
   font-size: 1em;
   background-color: #EEEFF2 !important;
-  color: #1f2532;
+  color: #333333;
   margin: 0px;
   line-height: 1.5;
   -webkit-text-size-adjust: 100%;
@@ -2681,7 +2681,7 @@ ul {
  ========================================================================== */
 /* System Greys */
 .wt-background--asphalt {
-  background-color: #1f2532 !important; }
+  background-color: #333333 !important; }
 
 .wt-background--chrome-dark {
   background-color: #898b8e !important; }
@@ -2757,7 +2757,7 @@ ul {
     overflow-wrap: break-word;
     word-wrap: break-word;
     hyphens: auto; } }
-/* Media query breakpoint classes based on max-width counter to the min-width classes in grid.scss
+/* Media query breakpoint classes based on being mirrors to the min-width classes in grid.scss
  ========================================================================== */
 @media (max-width: 576px) {
   .d-max-sm-none {
@@ -2899,7 +2899,8 @@ small {
 .wt-text--h1, h1 {
   font-weight: 300;
   font-size: 3rem;
-  line-height: 4.375rem; }
+  line-height: 4.375rem;
+  color: #333333; }
 
 .wt-text--h2, h2 {
   font-size: 2.813rem;
@@ -2973,7 +2974,7 @@ small {
 /* Color Modifiers */
 /* System Greys */
 .wt-text--asphalt {
-  color: #1f2532 !important; }
+  color: #333333 !important; }
 
 .wt-text--chrome-dark {
   color: #898b8e !important; }
@@ -3030,7 +3031,7 @@ small {
     text-align: left;
     background: #FFFFFF;
     padding: 5px 10px;
-    border-left: #32C5FF solid 5px;
+    border-left: #F7B500 solid 5px;
     text-transform: uppercase; }
   .wt-card--travel-domestic {
     position: absolute;
@@ -3042,7 +3043,7 @@ small {
     text-align: left;
     background: #FFFFFF;
     padding: 5px 10px;
-    border-left: #F7B500 solid 5px;
+    border-left: #32C5FF solid 5px;
     text-transform: uppercase; }
   .wt-card--travel-lrg .wt-card--travel-body-location {
     font-size: 1.875em;
@@ -3066,9 +3067,10 @@ small {
       letter-spacing: 0.5px;
       text-align: left;
       text-transform: uppercase;
-      font-weight: 500; }
+      font-weight: 600; }
     .wt-card--travel-body-location {
       font-size: 1.5em;
+      font-weight: bold;
       color: #333333;
       letter-spacing: -0.3px;
       text-align: left;
@@ -3079,7 +3081,8 @@ small {
       letter-spacing: 0.91px;
       text-align: left;
       text-transform: uppercase;
-      margin-bottom: 8px; }
+      margin-bottom: 8px;
+      font-weight: 600; }
     .wt-card--travel-body-text {
       font-size: 1em;
       color: #333333;
