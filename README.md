@@ -1,43 +1,49 @@
 # World Traveler: testing a scalable static skeleton concept.
 
-- This is a skeleton framework for scaling up based off the Atomic Design theory.
+- This is a skeleton framework for projects built with the concept pf tidly scaling and is based off the Atomic Design theory by Brad Frost.
+- This Atomic-esque Design structure is not a fit for every project.
 
-## Notes (TODO list and Flaws):
+## Notes (TODO list, Flaws, Plans):
 
-- The biggest problem with scalability from here is the lack of dynamic functionality. With a more dynamic system in place there will be a lot of repetitive Code.
-- - DRY is not being followed.
-- - Need to re-design cards to work with our psudo dynamic system of Javascript using JSON data to inject HTML at a target ID.
-- - The styling in patterns/atoms/card--travel/card--travel.scss is overly repetitive as well.
-- - A framework or Library system re-factor could improve the dynamic issue and prevent overly verbose/repetitive HTML. React would lend itself well to compnentization in the Atomic style.
+- FLAW: DRY is not being followed. The biggest problem with scalability from here is the lack of dynamic functionality. WITHOUT a more dynamic system in place there will be a lot of repetitive Code.
+- - TODO: (short term improvement for this static version) refactor styling in patterns/atoms/card--travel/card--travel.scss, it is overly repetitive.
+- - TODO: Accesibilty and Semantic HTML are not being fully utilized. Improve the cards there.
+- - PLANS: Either: Re-design cards to work with our psudo dynamic system of using Javascript/JSON to inject HTML at a target ID for less repitition (for this static version of the system skeleton) ||, A framework or Library system version would further improve the dynamic issue and prevent overly verbose/repetitive patterns. React would lend itself well to componentization in this Atomic style.
 
-- Accesibilty and Semantic HTML are not being fully utilized. Improve the cards there.
+- - FLAW: Cards have potential for uneven sizes (heights) compared to those in same row at some screen sizes, especially with unknown amounts of text possible: NEED to determine Product intentions and User Interaction before building further functionality.
+- - - One possible solution is to clamp text overflow, example below. AGAIN: should determine Product/User further functionality is added.
+    <pre>
+        <code>
+            .wt-card--travel-body-text {
+                display: -webkit-box;
+                -webkit-line-clamp: 2;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+            }        
+        </code>
+    </pre>
 
-- Cards have potential for uneven sizes (heights) compared to those in same row at some screen sizes, especially with unknown amounts of text possible: Part of a solution below.
-<pre>
-    <code>
-        .wt-card--travel-body-text {
-            display: -webkit-box;
-            -webkit-line-clamp: 2;
-            -webkit-box-orient: vertical;
-            overflow: hidden;
-        }        
-    </code>
-</pre>
-- - One possible solution is to clamp text overflow (may require several media queries based on intent of usage). Should be used in conjunction with adding modal/pop-up function to Cards so remaining text can be seen. Can wait for React re-factor.
-- - Cards are also may need links, but need more info on interaction intentions.
+- - TODO: Cards are also may need links, BUT need more info on interaction intentions.
 
 ## Dev Commands:
 
-(in the spirit of keeping this a light weight skeleton that can used on a wide variety of projects for me no tools other than sass were added to this version)
-sass --watch css-core/wt.scss:style.css
+(in the spirit of keeping this a light weight skeleton that can adapted to to a wide variety of projects for me no tools other than sass were added to this version)
 
-http-server -p 8080
+<pre> 
+  <code>
+    sass --watch css-core/wt.scss:style.css
+      &&
+    http-server -p 8080
+  </code>
+</pre>
 
 ### File Tree:
 
-- [assets/](./world-traveler/assets)
-  - [data/](./world-traveler/assets/data)
-    - [wt_cards\_\_travel.json](./world-traveler/assets/data/wt_cards__travel.json)
+- TODO: Update links to be relative to readme.md
+
+- [assets/](assets)
+  - [data/](assets/data/)
+    - [wt_cards\_\_travel.json](assets/data/wt_cards__travel.json)
   - [images/](./world-traveler/assets/images)
 - [css-core/](./world-traveler/css-core)
   - [core-variables.scss](./world-traveler/css-core/core-variables.scss)
@@ -57,6 +63,7 @@ http-server -p 8080
     - [card--travel/](./molecules/card--travel)
   - [organisms/](./world-traveler/patterns/organisms)
   - [templates/](./world-traveler/patterns/templates)
+    - [page-home/](./templates/page-home)
 - [.gitattributes](./world-traveler/.gitattributes)
 - [.gitignore](./world-traveler/.gitignore)
 - [LICENSE](./world-traveler/LICENSE)
@@ -75,7 +82,7 @@ http-server -p 8080
             (-ms-high-contrast: active) {
                 // IE10+ CSS here // ie bug
                 .targeted-class {
-                    <!-- do stuff here -->
+                    // do stuff here 
                 }            
         }
     </code>
